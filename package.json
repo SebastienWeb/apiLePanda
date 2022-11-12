@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node --watch index.js"
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -20,17 +20,26 @@
   },
   "homepage": "https://github.com/SebastienWeb/apiLePanda#readme",
   "devDependencies": {
-    "@prisma/client": "^4.5.0",
+    "@prisma/client": "^4.6.1",
     "eslint": "^8.26.0",
     "eslint-config-prettier": "^8.5.0",
     "fastify": "^4.9.2",
     "prettier": "2.7.1",
-    "prisma": "^4.5.0"
+    "prisma": "^4.6.1"
   },
   "dependencies": {
     "@fastify/compress": "^6.1.1",
+    "@fastify/cookie": "^8.3.0",
     "@fastify/cors": "^8.1.1",
     "@fastify/helmet": "^10.0.2",
-    "dotenv": "^16.0.3"
+    "@fastify/secure-session": "^5.2.0",
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "fastify-multer": "^2.0.3",
+    "fastify-plugin": "^4.3.0",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.20",
+    "password-validator": "^5.3.0",
+    "uuid": "^9.0.0"
   }
 }
